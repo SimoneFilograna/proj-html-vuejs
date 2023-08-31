@@ -1,6 +1,10 @@
 <script>
-    export default{
+    import Navbar from "./Navbar.vue";
 
+    export default{
+        components: {
+            Navbar,
+        }
     }
 </script>
 
@@ -8,10 +12,9 @@
     <header>
         <div class="jumbotron">
 
-            <div class="container">
-                <div class="navbar">
+            <div class="container-fluid">
 
-                </div>
+                <Navbar></Navbar>
 
                 <div class="introduce-container">
 
@@ -28,5 +31,7 @@
     .jumbotron{
         @include mixins.blue-background;
         height: 200px;
+        padding-left: 130px;
+        padding-right: 130px;
     }
 </style>
