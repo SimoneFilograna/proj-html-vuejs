@@ -25,7 +25,7 @@
                     {
                         img: "../assets/Group-566.png",
                         title: "Branding Strategy",
-                        info: "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper"
+                        info: "hen, while the lovely valley teems with vapour around meand the meridian sun strikes the upper"
                     },
                 ]
             }
