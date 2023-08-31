@@ -53,7 +53,11 @@
 
         
         .my-button{
-            @include mixins.blue-button
+            @include mixins.blue-button;
+
+        &:hover{
+            @include mixins.red-hover;
+        }
         }
 
     }
