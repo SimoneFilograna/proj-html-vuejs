@@ -1,5 +1,9 @@
 <script>
+    import CardSpecialHover from "./CardSpecialHover.vue" ;
     export default {
+        components:{
+            CardSpecialHover,
+        },
         data(){
             return{
                 CardList: [
@@ -9,7 +13,7 @@
                         info: "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper"
                     },
                     {
-                        img: "../assets/Group-567.png.png",
+                        img: "../assets/Group-567.png",
                         title: "SEO Optimization",
                         info: "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper"
                     },
@@ -25,7 +29,7 @@
                     },
                 ]
             }
-        }
+        },
     }
 </script>
 
@@ -39,8 +43,8 @@
 
         <div class="container">
             <div class="row row-cols-4">
-                <div class="col">
-
+                <div class="col" v-for="SingleEl in CardList">
+                    <CardSpecialHover :cardObj="SingleEl"></CardSpecialHover>
                 </div>
             </div>
         </div>
