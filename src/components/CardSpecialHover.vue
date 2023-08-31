@@ -20,7 +20,7 @@
             <img :src="getImg(cardObj.img)" class="card-img" alt="">
         </div>
 
-        <div class="text-container px-3 pt-2 card-body">
+        <div class="text-container px-2 pt-2 card-body">
             <h4 class="fw-bold card-text">{{ cardObj.title }}</h4>
             <p class="card-text">{{ cardObj.info }}</p>
         </div>
@@ -39,10 +39,10 @@
         
         padding: 2rem;
         position: relative;
-        padding-top: 8rem;
+        padding-top: 7rem;
         padding-bottom: 4rem;
         border-radius: 1.5rem;
-        margin-top: 10rem;
+        margin-top: 9rem;
         transition: all .8s linear;
 
     &:hover .button-div{
@@ -65,11 +65,13 @@
             top: 0;
             left: 50%;
             transform: translate(-50%, -50%);
-            aspect-ratio: 1/1;
+            
 
             .card-img{
-                padding: 1.5rem;
-                width: 250px;
+                padding: 2rem;
+                width: 180px;
+                aspect-ratio: 1/1;
+                object-fit: cover;
                 border-radius: 1.5rem;
             }
         };
