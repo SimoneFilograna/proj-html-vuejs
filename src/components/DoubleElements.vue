@@ -37,7 +37,7 @@
         padding-bottom: 7rem;
         .text-introduce{
             h2{
-                font-size: 3.7rem;
+                font-size: 3.5rem;
             }
             
             .info{
