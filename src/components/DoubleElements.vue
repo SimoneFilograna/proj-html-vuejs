@@ -42,32 +42,35 @@
             
             .info{
                 color: variables.$blue-text;            
-            }
-    
-            .red-button{
-                @include mixins.red-button;
-                width: 140px;
-                padding-top: .5rem;
-                padding-bottom: .5rem;
+            };
 
-            &:hover{
-                @include mixins.blue-hover;
-                @include mixins.blue-shadow;
-            }
+            .button-cont{
+                .red-button{
+                    @include mixins.red-button;
+                    width: 140px;
+                    padding-top: .5rem;
+                    padding-bottom: .5rem;
     
-            }
-            .blue-button{
-                @include mixins.blue-button;
-                width: 140px;
-                padding-top: .5rem;
-                padding-bottom: .5rem;
-                margin-left: 1rem;
-
-            &:hover{
-                @include mixins.red-hover;
-                @include mixins.red-shadow;
+                &:hover{
+                    @include mixins.blue-hover;
+                    @include mixins.blue-shadow;
+                }
+        
+                }
+                .blue-button{
+                    @include mixins.blue-button;
+                    width: 140px;
+                    padding-top: .5rem;
+                    padding-bottom: .5rem;
+                    margin-left: 1rem;
+    
+                &:hover{
+                    @include mixins.red-hover;
+                    @include mixins.red-shadow;
+                    }
                 }
             }
+    
         };
     
         .big-img{

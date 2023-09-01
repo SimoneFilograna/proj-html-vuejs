@@ -42,7 +42,7 @@
         padding-top: 7rem;
         padding-bottom: 4rem;
         border-radius: 1.5rem;
-        margin-top: 9rem;
+        margin-top: 10rem;
         transition: all .8s linear;
 
     &:hover .button-div{
@@ -69,10 +69,11 @@
 
             .card-img{
                 padding: 2rem;
-                width: 180px;
+                width: 200px;
                 aspect-ratio: 1/1;
                 object-fit: cover;
                 border-radius: 1.5rem;
+                object-fit: contain
             }
         };
 
