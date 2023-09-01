@@ -20,7 +20,7 @@
     <GenericSection></GenericSection>
     <InvertedDoubleElements></InvertedDoubleElements>
     <CarouselSection></CarouselSection>
-    <!-- <PriceSection></PriceSection> -->
+    <PriceSection></PriceSection>
     <ReviewSection></ReviewSection>
 
 

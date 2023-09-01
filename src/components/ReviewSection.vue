@@ -66,9 +66,7 @@
 
 <style lang="scss" scoped>
 
-    section{
-        .card-img{
-
-        }
+    .review-container{
+        margin-top: 38rem;
     }
 </style>
