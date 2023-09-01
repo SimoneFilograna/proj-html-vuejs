@@ -3,6 +3,7 @@
     import InvertedDoubleElements from './InvertedDoubleElements.vue';
     import CarouselSection from './CarouselSection.vue';
     import PriceSection from './PriceSection.vue';
+    import ReviewSection from './ReviewSection.vue';
 
     export default{
         components:{
@@ -10,6 +11,7 @@
             InvertedDoubleElements,
             CarouselSection,
             PriceSection,
+            ReviewSection,
         }
     }
 </script>
@@ -18,7 +20,9 @@
     <GenericSection></GenericSection>
     <InvertedDoubleElements></InvertedDoubleElements>
     <CarouselSection></CarouselSection>
-    <PriceSection></PriceSection>
+    <!-- <PriceSection></PriceSection> -->
+    <ReviewSection></ReviewSection>
+
 
 </template>
 
