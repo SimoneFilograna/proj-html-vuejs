@@ -39,7 +39,7 @@
                                 <p><strong>Exceptional</strong> Design</p>
                             </div>
 
-                            <button type="button" class="btn btn-primary red-button px-3 py-4">
+                            <button type="button" class="btn btn-primary red-button px-3">
                                 <span class="d-inline-block pe-4">Order Now</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
@@ -191,6 +191,7 @@
                     @include mixins.red-button;
                     @include mixins.red-shadow;
                     font-size: 1.5rem;
+                    margin-bottom: 5rem;
 
                 &:hover{
                     @include mixins.blue-button;
