@@ -64,7 +64,7 @@
             <!-- carousel button -->
 
 
-            <div class="button-container d-flex gap-5" >
+            <div class="button-container d-flex gap-5"  >
                 <button type="button" class="btn btn-outline-danger">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
@@ -90,6 +90,10 @@
 
     section{
         margin-top: 7rem;
+
+        .top-container{
+            margin-bottom: 5rem;
+        }
 
         small{
             color: variables.$over-color-text

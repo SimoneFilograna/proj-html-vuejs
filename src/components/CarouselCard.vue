@@ -27,7 +27,21 @@
 </template>
 
 <style lang="scss" scoped>
+    @use "../sass/partials/mixins";
     .card{
         width: 500px;
+        border-radius: 30px;
+        border: 1px;
+        box-shadow: 0px 0px 50px -20px rgb(88, 88, 88);
+
+    &:hover {
+        @include mixins.red-hover;
     }
+
+        img{
+            border-radius: 30px;
+            border-color: transparent;
+        }
+    }
+
 </style>
