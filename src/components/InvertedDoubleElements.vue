@@ -7,11 +7,17 @@
 
 <template>
     <section>
+
         <div class="container double-elements d-flex align-items-center">
+
+            <!-- image container -->
+
             <div class="container-big-img">
                 <img src="../assets/men-data.png" class="big-img" alt="">
             </div>
     
+            <!-- text containter -->
+
             <div class="text-introduce text-white d-flex flex-column gap-3">
                 <div class="title">
                     <p>Start Your Project</p>
@@ -22,6 +28,8 @@
                     <p class="info pe-5">When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface .of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary,</p>
                 </div>
     
+                <!-- button lower -->
+
                 <div class="button-cont">
                     <button type="button" class="btn btn-primary red-button">Try It Now</button>
                     <button type="button" class="btn btn-primary blue-button">Explore More</button>           

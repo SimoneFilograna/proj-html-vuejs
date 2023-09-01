@@ -7,6 +7,9 @@
 
 <template>
     <div class="double-elements d-flex align-items-center gap-4">
+
+        <!-- text-container jumbo -->
+
         <div class="text-introduce text-white d-flex flex-column gap-5">
             <div class="title">
                 <h2 class="fw-bold">Business Planning</h2>
@@ -17,11 +20,16 @@
                 <p class="info pe-5">When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface . </p>
             </div>
 
+            <!-- lower button in text container -->
+
             <div class="button-cont">
                 <button type="button" class="btn btn-primary red-button">Try It Now</button>
                 <button type="button" class="btn btn-primary blue-button">Explore More</button>           
             </div>
         </div>
+
+            <!-- right side img -->
+
         <div>
             <img src="../assets/header.png" class="big-img" alt="">
         </div>

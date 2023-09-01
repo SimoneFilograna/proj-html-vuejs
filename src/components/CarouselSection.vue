@@ -1,0 +1,86 @@
+<script>
+    export default {
+        data(){
+            return{
+                CardList: [
+                    {
+                        id: 1,
+                        img: "../assets/8wa60okr-1-790x576.jpg",
+                        title: "Basket of Flower table",
+                        info: "Branding Strategy"
+                    },
+                    {
+                        id: 2,
+                        img: "../assets/DRY-1-790x576.jpg",
+                        title: "Purinky products",
+                        info: "Digital Experience"
+                    },
+                    {
+                        id: 3,
+                        img: "../assets/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg",
+                        title: "Satisfy Poster",
+                        info: "Branding Strategy"
+                    },
+                    {
+                        id: 4,
+                        img: "../assets/84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg",
+                        title: "Mock-up Template",
+                        info: "E-commerce"
+                    },
+                    {
+                        id: 5,
+                        img: "../assets/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576",
+                        title: "Landing Page",
+                        info: "Digital Experiece"
+                    },
+                    
+                ]
+            }
+        },
+    }
+</script>
+
+<template>
+    <section>
+        <div class="top-container d-flex align-items-center justify-content-between">
+            <div class="title-container">
+                <div class="section-title-cont">
+                    <small class="d-inline-block pb-2 fw-medium">Our Service</small>
+                    <h2 class="fs-1 pb-2"><span class="fw-bold">latest</span> We Do</h2>
+                </div>
+            </div>
+            <div class="button-container d-flex gap-5">
+                <button type="button" class="btn btn-outline-danger">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button type="button" class="btn btn-outline-danger">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-containter">
+
+        </div>
+    </section>
+</template>
+
+<style lang="scss" scoped>
+    @use "../sass/partials/variables";
+
+    section{
+        margin-top: 7rem;
+
+        // section style
+        
+        small{
+            color: variables.$over-color-text
+        }
+
+        button{
+            border-radius: 50%;
+        }
+    }
+
+
+</style>

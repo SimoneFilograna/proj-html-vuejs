@@ -35,6 +35,9 @@
 
 <template>
     <section class="pt-5">
+
+        <!-- text container side -->
+
         <div class="upper-container">
             <div class="section-title-cont text-center">
                 <small class="d-inline-block pb-2 fw-medium">Our Service</small>
@@ -42,6 +45,8 @@
                 <p>When, while the lovely valley teems with vapour around meand the</p>
             </div>
     
+            <!-- card container with cycle stamp -->
+
             <div class="container">
                 <div class="row row-cols-4">
                     <div class="col" v-for="SingleEl in CardList">
@@ -50,6 +55,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- lower button  -->
 
         <div class="lower-button text-center">
             <button type="button" class="btn btn-primary red-button">View All Services</button>
