@@ -50,9 +50,12 @@
         methods:{
             rightScroll(){
                 const wrapper = this.$refs.wrapper;
-                const card = this.$refs.card
-                console.log(wrapper, card)
-            }
+                const card = this.$refs.card[0];
+                const cardWidth = card.offsetWidth;
+                this.currentCard++;
+                console.log(wrapper, card, cardWidth);
+                wrapper.scrollLeft += cardWidth;
+            },
         }
     }
 </script>
@@ -74,7 +77,7 @@
 
 
             <div class="button-container d-flex gap-5"  >
-                <button type="button" class="btn btn-outline-danger">
+                <button type="button" class="btn btn-outline-danger" @click="leftScroll()">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
                 <button type="button" class="btn btn-outline-danger" @click="rightScroll()">
@@ -87,7 +90,7 @@
 
         <div class="carousel-containter d-flex gap-4 overflow-hidden" ref="wrapper">
 
-            <div class="card-wrapper" v-for="singleCard in CardList" ref="card">
+            <div class="card-wrapper" v-for="(singleCard, index) in CardList" :key="index" ref="card">
                 <Carouselcard :carouselObj="singleCard"></Carouselcard>
             </div>
         </div>
