@@ -33,6 +33,7 @@
     @use "../sass/partials/variables";
 
     footer{
+        margin-top: 17rem;
         padding-left: 120px;
         padding-right: 120px;
         padding-bottom: 2rem;
@@ -53,7 +54,8 @@
             &:hover{
                 color: variables.$over-color-text;
                 }    
-            }       
+            }
+       
         }
     }
 </style>
