@@ -9,9 +9,23 @@
 </script>
 
 <template>
-    <TopFooter></TopFooter>
+    <footer>
+        <TopFooter></TopFooter>
+    
+        <div class="credits">
+    
+        </div>
+    </footer>
+
+
 </template>
 
 <style lang="scss" scoped>
+    @use "../sass/partials/mixins";
 
+    footer{
+        padding-left: 120px;
+        padding-right: 120px;
+        @include mixins.blue-background;
+    }
 </style>

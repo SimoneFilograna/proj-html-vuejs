@@ -83,15 +83,12 @@
 </template>
 
 <style lang="scss" scoped>
-     @use "../sass/partials/mixins";
+    
     @use "../sass/partials/variables";
 
     .footer-container{
         padding-bottom: 3rem;
-        padding-top: 10rem;
-        padding-left: 120px;
-        padding-right: 120px;
-        @include mixins.blue-background;
+        padding-top: 10rem;       
 
         .card{
             padding: 1rem;
