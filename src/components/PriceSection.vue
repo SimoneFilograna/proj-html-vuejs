@@ -14,7 +14,7 @@
         <!-- basic cards -->
 
         <div class="big-card-container">
-            <div class="row row-cols-3">
+            <div class="row row-cols-3 g-5">
 
                 <!-- card 1 -->
 
