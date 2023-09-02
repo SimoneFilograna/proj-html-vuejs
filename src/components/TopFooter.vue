@@ -1,11 +1,21 @@
 <script>
-    export default{
+    import SubscribeFooter from './SubscribeFooter.vue';
 
+    export default{
+        components: {
+            SubscribeFooter,
+        }
     }
 </script>
 
 <template>
-    <div class="footer-container">
+
+
+
+    <div class="footer-container position-relative">
+
+        <SubscribeFooter></SubscribeFooter>
+
         <div class="row row-cols-4 g-5">
 
             <!-- img col -->
