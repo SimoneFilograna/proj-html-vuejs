@@ -82,8 +82,7 @@
     </div>
 </template>
 
-<style lang="scss" scoped>
-    
+<style lang="scss" scoped>   
     @use "../sass/partials/variables";
 
     .footer-container{
@@ -94,7 +93,7 @@
             padding: 1rem;
             border: 0;
             background-color: transparent;
-            color: #617a9a;
+            color: #7a829a;
 
             strong{
                 color: white;
@@ -111,7 +110,7 @@
 
                 a{
                     text-decoration: none;
-                    color: #617a9a;
+                    color: variables.$footer-color-text;
 
                 &:hover{
                     color: variables.$over-color-text;
