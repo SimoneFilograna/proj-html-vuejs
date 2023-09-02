@@ -70,8 +70,6 @@
 
         .cards-cont{
             margin-top: 12rem;
-
-
         }
 
     }

@@ -55,13 +55,14 @@
         border: 0;
         border-radius: 30px;
         padding-bottom: .5rem;
+        transition: box-shadow .5s linear;
     
     &:hover{
         box-shadow: 0px -3px 60px 30px rgb(233, 233, 233);
     }
 
         .img-container{
-            width: 110px;
+            width: 120px;
             margin: auto;
             border-radius: 50%;
             border: 5px solid #de4a6c;
@@ -72,7 +73,12 @@
         };
 
         .stars-container{
+            margin-top: 2rem;
             padding-top: 5rem;
+            padding-bottom: 2rem;
+            background-image: url(../assets/bg-mini-card.png);
+            background-repeat: no-repeat;
+            background-position: 55% 80%;
         }
 
 
