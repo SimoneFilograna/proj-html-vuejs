@@ -58,7 +58,7 @@
 </script>
 
 <template>
-    <section class="overflow-hidden">
+    <section>
 
         <!-- title container text  -->
 
