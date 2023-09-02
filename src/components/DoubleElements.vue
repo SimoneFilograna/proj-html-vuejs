@@ -82,7 +82,7 @@
         };
     
         .big-img{
-            width: 100%;
+            // width: 100%;
             margin-left: 3rem;
         }
 

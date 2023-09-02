@@ -10,6 +10,7 @@
             return{
 
                 currentCard: 0,
+
                 CardList: [
                     {
                         id: 1,
@@ -45,11 +46,19 @@
                 ]
             }
         },
+
+        methods:{
+            rightScroll(){
+                const wrapper = this.$refs.wrapper;
+                const card = this.$refs.card
+                console.log(wrapper, card)
+            }
+        }
     }
 </script>
 
 <template>
-    <section>
+    <section class="overflow-hidden">
 
         <!-- title container text  -->
 
@@ -68,7 +77,7 @@
                 <button type="button" class="btn btn-outline-danger">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
-                <button type="button" class="btn btn-outline-danger">
+                <button type="button" class="btn btn-outline-danger" @click="rightScroll()">
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
@@ -76,9 +85,9 @@
 
         <!-- CAROUSEL -->
 
-        <div class="carousel-containter d-flex gap-4">
+        <div class="carousel-containter d-flex gap-4" ref="wrapper">
 
-            <div class="card-wrapper" v-for="singleCard in CardList">
+            <div class="card-wrapper" v-for="singleCard in CardList" ref="card">
                 <Carouselcard :carouselObj="singleCard"></Carouselcard>
             </div>
         </div>
@@ -94,6 +103,7 @@
         .top-container{
             margin-bottom: 5rem;
         }
+
 
         small{
             color: variables.$over-color-text

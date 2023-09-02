@@ -133,7 +133,7 @@
         }
 
         .big-card-container{
-            width: 1600px;
+            width: 85%;
             position: absolute;
             bottom: -120%;
             left: 50%;
@@ -146,7 +146,7 @@
                 .background-numb{
                     font-weight: 700;
                     position: absolute;
-                    top: -110px;
+                    top: -100px;
                     right: -10px;
                     font-size: 18rem;
                     color: rgba($color: lightgray, $alpha: .6);

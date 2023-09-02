@@ -34,8 +34,8 @@
 
     footer{
         margin-top: 17rem;
-        padding-left: 120px;
-        padding-right: 120px;
+        padding-left: 130px;
+        padding-right: 130px;
         padding-bottom: 2rem;
         @include mixins.blue-background;
 
