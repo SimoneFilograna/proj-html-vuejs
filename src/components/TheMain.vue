@@ -6,6 +6,7 @@
     import ReviewSection from './ReviewSection.vue';
     import TestimonialCard from './TestimonialCard.vue';
     import Clients from './Clients.vue';
+    
 
     export default{
         components:{
@@ -21,13 +22,16 @@
 </script>
 
 <template>
-    <GenericSection></GenericSection>
-    <InvertedDoubleElements></InvertedDoubleElements>
-    <CarouselSection></CarouselSection>
-    <PriceSection></PriceSection>
-    <ReviewSection></ReviewSection>
-    <TestimonialCard></TestimonialCard>
-    <Clients></Clients>
+    <main>
+        <GenericSection></GenericSection>
+        <InvertedDoubleElements></InvertedDoubleElements>
+        <CarouselSection></CarouselSection>
+        <PriceSection></PriceSection>
+        <ReviewSection></ReviewSection>
+        <TestimonialCard></TestimonialCard>
+        <Clients></Clients>
+    </main>
+    
 
 
 </template>
