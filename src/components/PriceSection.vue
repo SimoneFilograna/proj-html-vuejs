@@ -140,11 +140,13 @@
             transform: translate(-50%, -50%);
             
             .card{
+                border: 0;
                 border-radius: 30px;
+                box-shadow: 0px 0px 10px rgb(233, 233, 233);
                 .background-numb{
                     font-weight: 700;
                     position: absolute;
-                    top: -130px;
+                    top: -110px;
                     right: -10px;
                     font-size: 18rem;
                     color: rgba($color: lightgray, $alpha: .6);
