@@ -82,9 +82,7 @@
                     <h4 class="pb-4 text-white">Contac Us</h4>
                     <p><strong> Address:</strong> Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, Tx 76051</p>
                     <p><strong> Phone:</strong> +99 (0) 101 0000 888</p>
-                    <p><strong> Email:</strong> Info@yourdomaimcom</p>
-                    
-                    
+                    <p><strong> Email:</strong> Info@yourdomaimcom</p>                                      
                 </div>
             </div>
         </div>
@@ -97,7 +95,7 @@
 
     .footer-container{
         padding-bottom: 3rem;
-        padding-top: 10rem;       
+        padding-top: 15rem;       
 
         .card{
             padding: 1rem;

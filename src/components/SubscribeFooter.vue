@@ -23,8 +23,11 @@
     @use "../sass/partials/variables";
 
     .sub-container{
-        padding: 5.5rem 3.5rem;
+        position: absolute;
+        width: 100%;
+        top: -25%;
         @include mixins.red-hover;
+        padding: 5.5rem 3.5rem;
         border-radius: 30px;
         .input-container{
             position: relative;
