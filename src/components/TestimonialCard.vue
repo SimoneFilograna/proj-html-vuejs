@@ -45,8 +45,8 @@
         
                 <!-- card container with cycle stamp -->
     
-                <div class="cards-cont">
-                    <div class="row row-cols-4 justify-content-center g-5">
+                <div class="cards-cont container-fluid">
+                    <div class="row row-cols-4 justify-content-center g-4">
                         <div class="col" v-for="SingleEl in testimonialList">
                             <SingleTestimonial :singleTest="SingleEl"></SingleTestimonial>
                         </div>

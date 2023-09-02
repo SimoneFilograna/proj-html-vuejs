@@ -85,7 +85,7 @@
 
         <!-- CAROUSEL -->
 
-        <div class="carousel-containter d-flex gap-4" ref="wrapper">
+        <div class="carousel-containter d-flex gap-4 overflow-hidden" ref="wrapper">
 
             <div class="card-wrapper" v-for="singleCard in CardList" ref="card">
                 <Carouselcard :carouselObj="singleCard"></Carouselcard>

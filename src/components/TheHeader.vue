@@ -14,7 +14,7 @@
     <header>
         <div class="jumbotron">
 
-            <div class="container-fluid">
+            <div>
 
                 <Navbar></Navbar>
 
