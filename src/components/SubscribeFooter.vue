@@ -52,6 +52,7 @@
                 font-weight: 100;
                 border-radius: 45px;
                 padding: 1.2rem 2rem;
+                color: variables.$footer-color-text;
             }
 
         }
