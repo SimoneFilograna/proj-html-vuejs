@@ -146,7 +146,7 @@
                 .background-numb{
                     font-weight: 700;
                     position: absolute;
-                    top: -100px;
+                    top: -105px;
                     right: -10px;
                     font-size: 18rem;
                     color: rgba($color: lightgray, $alpha: .6);
