@@ -5,6 +5,7 @@
     import PriceSection from './PriceSection.vue';
     import ReviewSection from './ReviewSection.vue';
     import TestimonialCard from './TestimonialCard.vue';
+    import Clients from './Clients.vue';
 
     export default{
         components:{
@@ -14,6 +15,7 @@
             PriceSection,
             ReviewSection,
             TestimonialCard,
+            Clients,
         }
     }
 </script>
@@ -25,6 +27,7 @@
     <PriceSection></PriceSection>
     <ReviewSection></ReviewSection>
     <TestimonialCard></TestimonialCard>
+    <Clients></Clients>
 
 
 </template>
