@@ -17,10 +17,10 @@
                     <p>@ 2023 Phlox. All Rights Reserved.</p>
                 </div>
                 <div class="icon-container text-white d-flex gap-5">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>                                                                           
                 </div>
         </div>
     </footer>
@@ -46,6 +46,14 @@
             p{
                 color: variables.$footer-color-text;
             }
+
+            a{
+                color: white;
+            
+            &:hover{
+                color: variables.$over-color-text;
+                }    
+            }       
         }
     }
 </style>
