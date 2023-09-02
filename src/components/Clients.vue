@@ -27,7 +27,7 @@
     </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .logo-container{
         margin-top: 14rem;
         margin-bottom: 14rem;
