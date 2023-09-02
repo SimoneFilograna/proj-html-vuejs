@@ -21,7 +21,7 @@
                     <div class="col-6">
                         <div class="card h-100 text-white">                  
                             <img src="../assets/headway-537308-unsplash-1380x703.jpg" class="card-img" alt="">
-                            <div class="card-img-overlay d-flex flex-column ps-5">
+                            <div class="card-img-overlay d-flex flex-column h-100 ps-5">
                                 <p class="card-text mt-auto">April 21, 2019 &bull; by Paul</p>
                                 <h5 class="card-title">Amazon gets CCI nod to acquire 49% stake in</h5>
                                 <div class="d-flex justify-content-between align-items-baseline">
@@ -70,6 +70,12 @@
 
     .review-container{
         margin-top: 38rem;
+
+        .section-title-cont{
+            small{
+                color: variables.$over-color-text;
+            }    
+        }
 
         .card-container{
             padding-top: 6rem;
