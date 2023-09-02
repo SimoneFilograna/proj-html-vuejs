@@ -31,13 +31,13 @@
             width: 40%;
 
             .btn{
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 @include mixins.blue-button;
                 position: absolute;
                 right: 1%;
-                top: 13%;
+                top: 10%;
                 padding: 1rem;
-                width: 30%;
+                width: 20%;
 
             &:hover{
                 @include mixins.red-hover
