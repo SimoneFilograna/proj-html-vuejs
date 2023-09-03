@@ -39,7 +39,7 @@
             <div class="testimonial-container">
                 <div class="section-title-cont text-center">
                     <small class="d-inline-block pb-2 fw-medium">Testimonial</small>
-                    <h2 class="fs-1 pb-2"><span class="fw-bold">What</span> People Say</h2>
+                    <h2 class="pb-2"><span class="fw-bold">What</span> People Say</h2>
                     <p>When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface</p>
                 </div>
         
@@ -64,9 +64,19 @@
     .testimonial-container{
         margin-top: 10rem;
 
+        h2{
+            font-size: variables.$text-section-h2;
+        }
+
         small{
             color: variables.$over-color-text;
+            font-size: variables.$text-small-size;
         };
+
+        p{
+            font-size: variables.$text-small-size;
+            padding-top: 1.2rem;
+        }
 
         .cards-cont{
             margin-top: 12rem;

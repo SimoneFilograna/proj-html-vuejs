@@ -21,7 +21,7 @@
 </script>
 
 <template>
-        <div class="card text-center d-fle flex-column gap-5 position-relative">
+        <div class="card text-center d-flex flex-column gap-1 position-relative">
 
             <div class="img-container">
                 <img :src="getImg(singleTest.photo)" class="card-img-top" alt="...">
@@ -62,7 +62,7 @@
     }
 
         .img-container{
-            width: 120px;
+            width: 125px;
             margin: auto;
             border-radius: 50%;
             border: 5px solid #de4a6c;
@@ -82,8 +82,7 @@
         }
 
 
-        .card-body{
-            margin-top: -1.5rem;
+        .card-body{     
             font-size: 1.1rem;
         };
     }
