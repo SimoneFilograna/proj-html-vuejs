@@ -70,7 +70,7 @@
 </script>
 
 <template>
-    <section>
+    <section class="pe-0">
 
         <!-- title container text  -->
 
@@ -85,7 +85,7 @@
             <!-- carousel button -->
 
 
-            <div class="button-container d-flex gap-5"  >
+            <div class="button-container d-flex gap-5">
                 <button type="button" class="btn btn-outline-danger" @click="leftScroll()">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
@@ -108,12 +108,17 @@
 
 <style lang="scss" scoped>
     @use "../sass/partials/variables";
+    @use "../sass/partials/mixins";
 
     section{
         margin-top: 7rem;
 
         .top-container{
             margin-bottom: 5rem;
+
+            small{
+                color: variables.$over-color-text
+            }
         }
 
         .carousel-container{
@@ -121,12 +126,21 @@
         }
 
 
-        small{
-            color: variables.$over-color-text
+        .button-container{
+            padding-right: 200px;
+        }
+        button{
+            font-size: 1.2rem;
+            border-radius: 50%;
+            padding: 1rem;
+            width: 60px;
+            aspect-ratio: 1/1;
+            transition: all .3s linear;
+
+        &:hover{
+            @include mixins.red-hover
         }
 
-        button{
-            border-radius: 50%;
         }
     }
 
