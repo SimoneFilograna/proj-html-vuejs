@@ -116,6 +116,10 @@
             margin-bottom: 5rem;
         }
 
+        .carousel-container{
+            scroll-behavior: smooth;
+        }
+
 
         small{
             color: variables.$over-color-text
