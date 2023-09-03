@@ -39,7 +39,9 @@
     <div class="fixed-container-bottom d-flex align-items-center gap-4">
 
         <div class="arrow-container">
-            <i class="fa-solid fa-arrow-up"></i>
+            <a href="#header">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
         </div>
 
         <div class="chat-container text-white" >
@@ -109,6 +111,8 @@
             i{
                 font-size: .9rem;
                 padding: 1rem;
+                color: black;
+                text-decoration: none;
                 
             }
         }
