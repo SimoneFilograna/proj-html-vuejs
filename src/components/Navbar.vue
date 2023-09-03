@@ -32,12 +32,13 @@
 <style lang="scss" scoped>
     @use "../sass/partials/mixins";
     .navbar-container{
+        font-size: 1.2rem;
         color: white;
         display: flex;
         align-items: center;
         padding-top: 1.5rem;
         .logo-top{
-            width: 130px;
+            width: 150px;
         }
 
         .menu-container{
@@ -52,6 +53,7 @@
         }
         
         .my-button{
+            font-size: 1.2rem;
             @include mixins.blue-button;
 
         &:hover{
