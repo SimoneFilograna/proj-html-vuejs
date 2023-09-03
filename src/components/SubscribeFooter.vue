@@ -23,6 +23,7 @@
     @use "../sass/partials/variables";
 
     .sub-container{
+        
         position: absolute;
         width: 100%;
         top: -25%;
