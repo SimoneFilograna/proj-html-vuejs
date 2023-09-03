@@ -78,7 +78,7 @@
             <div class="title-container">
                 <div class="section-title-cont">
                     <small class="d-inline-block pb-2 fw-medium">Our Service</small>
-                    <h2 class="fs-1 pb-2"><span class="fw-bold">latest</span> We Do</h2>
+                    <h2 class="pb-2"><span class="fw-bold">latest</span> work</h2>
                 </div>
             </div>
 
@@ -116,8 +116,13 @@
         .top-container{
             margin-bottom: 5rem;
 
+            h2{
+                font-size: variables.$text-section-h2;
+            }
+
             small{
-                color: variables.$over-color-text
+                color: variables.$over-color-text;
+                font-size: variables.$text-small-size;
             }
         }
 
