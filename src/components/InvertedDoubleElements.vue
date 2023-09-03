@@ -8,19 +8,19 @@
 <template>
     <section>
 
-        <div class="container double-elements d-flex align-items-center">
+        <div class="double-elements">
 
-            <!-- image container -->
+    <!-- image container -->
 
             <div class="container-big-img">
                 <img src="../assets/men-data.png" class="big-img" alt="">
             </div>
     
-            <!-- text containter -->
+    <!-- text containter -->
 
             <div class="text-introduce text-white d-flex flex-column gap-3">
                 <div class="title">
-                    <p>Start Your Project</p>
+                    <p class="mb-5">Start Your Project</p>
                     <h2 class="fw-bold">Grow Your Business</h2>
                     <p class="under-para">With Our Strategy</p>
                 </div>
@@ -31,7 +31,7 @@
                 <!-- button lower -->
 
                 <div class="button-cont">
-                    <button type="button" class="btn btn-primary red-button">Try It Now</button>
+                    <button type="button" class="btn btn-primary red-button me-3">Try It Now</button>
                     <button type="button" class="btn btn-primary blue-button">Explore More</button>           
                 </div>
             </div>
@@ -47,33 +47,44 @@
         @include mixins.blue-background
     }
     .double-elements{
+        display: flex;
+        align-items: center;
+        gap: 10rem;
         margin-top: 6.5rem;
-        padding-top: 5rem;
-        padding-bottom: 9rem;
+        padding-top: 10rem;
+        padding-bottom: 12rem;
         .text-introduce{
+            padding-left: 5rem;
             margin-top: 3rem;
-            margin-left: 20rem;
             h2{
-                font-size: 3.5rem;
+                font-size: 4.2rem;
             };
 
+            p{
+                font-size: variables.$text-small-size;   
+            }
+
             .under-para{
-                font-size: 3.5rem;
+                font-size: 4.2rem;
             }
             
             .inner-para{
                 .info{
-                    color: variables.$blue-text;        
+                    color: variables.$blue-text;  
+                    font-size: variables.$text-small-size;      
                 };
 
             }
 
             .button-cont{
+
+                margin-top: 2rem;
                 .red-button{
                     @include mixins.red-button;
-                    width: 150px;
-                    padding-top: .5rem;
-                    padding-bottom: .5rem;
+                    width: 180px;
+                    padding-top: .8rem;
+                    padding-bottom: .8rem;
+                    font-size: 1.1rem;
     
                 &:hover{
                     @include mixins.blue-hover;
@@ -83,10 +94,11 @@
                 }
                 .blue-button{
                     @include mixins.blue-button;
-                    width: 150px;
-                    padding-top: .5rem;
-                    padding-bottom: .5rem;
+                    width: 180px;
+                    padding-top: .8rem;
+                    padding-bottom: .8rem;
                     margin-left: 1rem;
+                    font-size: 1.1rem;
     
                 &:hover{
                     @include mixins.red-hover;
@@ -98,13 +110,14 @@
         };
         
         .container-big-img{
-            width: 1200px;
+            width: 90%;
+            padding-left: 5rem;
             background-image: url(../assets/nemoodar.png);
             background-position: 0 -20px;
             background-size: contain;
             background-repeat: no-repeat;
             .big-img{
-                width: 400px;
+                object-fit: contain;
                 margin-left: 3rem;
             }
         }

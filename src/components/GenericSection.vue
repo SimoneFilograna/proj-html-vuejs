@@ -41,14 +41,14 @@
         <div class="upper-container">
             <div class="section-title-cont text-center">
                 <small class="d-inline-block pb-2 fw-medium">Our Service</small>
-                <h2 class="fs-1 pb-2"><span class="fw-bold">What</span> We Do</h2>
+                <h2 class="pb-2"><span class="fw-bold">What</span> We Do</h2>
                 <p>When, while the lovely valley teems with vapour around meand the</p>
             </div>
     
             <!-- card container with cycle stamp -->
 
-            <div class="container">
-                <div class="row row-cols-4">
+            <div class="container-fluid">
+                <div class="row row-cols-4 align-items-center g-0">
                     <div class="col" v-for="SingleEl in CardList">
                         <CardSpecialHover :cardObj="SingleEl"></CardSpecialHover>
                     </div>
@@ -70,14 +70,25 @@
 
     small{
         color: variables.$over-color-text;
+        font-size: variables.$text-small-size;
     };
+
+    h2{
+        font-size: variables.$text-section-h2;
+    };
+
+    p{
+        font-size: variables.$text-small-size
+    }
+
 
     .red-button{
         @include mixins.red-button;
         @include mixins.red-shadow;
-        width: 190px;
-        padding-top: .6rem;
-        padding-bottom: .6rem;
+        font-size: 1.1rem;
+        width: 240px;
+        padding-top: .9rem;
+        padding-bottom: .9rem;
         margin-top: 8rem;
     &:hover{
         @include mixins.blue-hover;

@@ -53,6 +53,7 @@
         }
         
         .my-button{
+            width: 110px;
             font-size: 1.2rem;
             @include mixins.blue-button;
 

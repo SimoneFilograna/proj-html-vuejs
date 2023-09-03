@@ -20,9 +20,9 @@
             <img :src="getImg(cardObj.img)" class="card-img" alt="">
         </div>
 
-        <div class="text-container px-2 pt-2 card-body">
-            <h4 class="fw-bold card-text">{{ cardObj.title }}</h4>
-            <p class="card-text">{{ cardObj.info }}</p>
+        <div class="text-container px-5 pt-2 card-body">
+            <h3 class="fw-bold card-text pb-4">{{ cardObj.title }}</h3>
+            <p class="card-text px-3">{{ cardObj.info }}</p>
         </div>
 
         <div class="button-div">
@@ -35,14 +35,14 @@
 
 <style lang="scss" scoped>
     @use "../sass/partials/mixins";
+    @use "../sass/partials/variables";
     .text-card{
-        
         padding: 2rem;
         position: relative;
-        padding-top: 7rem;
+        padding-top: 9rem;
         padding-bottom: 4rem;
         border-radius: 1.5rem;
-        margin-top: 10rem;
+        margin-top: 13rem;
         transition: all .8s linear;
 
     &:hover .button-div{
@@ -69,7 +69,7 @@
 
             .card-img{
                 padding: 2rem;
-                width: 200px;
+                width: 230px;
                 aspect-ratio: 1/1;
                 object-fit: cover;
                 border-radius: 1.5rem;
@@ -80,15 +80,21 @@
         .button-div{
             opacity: 0;
             position: absolute;
-            bottom: -20%;
+            bottom: 0;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, 50%);
             .arrow-custom{
                 @include mixins.red-hover;
-                padding: 1.5rem;
+                padding: 1.8rem;
                 border-radius: 50%;
             }
+        };
+
+        .text-container{
+            font-size: variables.$text-small-size;
         }
 
     }
+
+
 </style>
