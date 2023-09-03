@@ -36,6 +36,10 @@
 
     &:hover {
         @include mixins.red-hover;
+    };
+
+    &:hover .card-body{
+        color: white;
     }
 
         img{
