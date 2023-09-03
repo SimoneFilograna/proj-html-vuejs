@@ -3,11 +3,11 @@
     }
 </script>
 <template>
-    <section class="position-relative">
+    <section class="position-relative d-flex justify-content-center">
         <!-- text containter -->
-        <div class="section-title-cont text-center text-white">
+        <div class="section-title-cont text-center">
             <small class="d-inline-block pb-4 fw-medium">Price List</small>
-            <h2 class="fs-1 pb-3"><span class="fw-bold">Our</span> Pricing</h2>
+            <h2 class="pb-3"><span class="fw-bold">Our</span> Pricing</h2>
             <p>When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.</p>
         </div>
 
@@ -39,8 +39,8 @@
                                 <p><strong>Exceptional</strong> Design</p>
                             </div>
 
-                            <button type="button" class="btn btn-primary red-button px-3">
-                                <span class="d-inline-block pe-4">Order Now</span>
+                            <button type="button" class="btn btn-primary red-button">
+                                <span class="d-inline-block">Order Now</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </div>
@@ -71,8 +71,8 @@
                                 <p><strong>Exceptional</strong> Design</p>
                             </div>
 
-                            <button type="button" class="btn btn-primary mid-button px-3">
-                                <span class="d-inline-block pe-4">Order Now</span>
+                            <button type="button" class="btn btn-primary mid-button">
+                                <span class="d-inline-block">Order Now</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </div>
@@ -102,8 +102,8 @@
                                 <p><strong>Exceptional</strong> Design</p>
                             </div>
 
-                            <button type="button" class="btn btn-primary red-button px-3">
-                                <span class="d-inline-block pe-4">Order Now</span>
+                            <button type="button" class="btn btn-primary red-button">
+                                <span class="d-inline-block">Order Now</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </div>
@@ -122,18 +122,30 @@
     section{
         margin-top: 7rem;
         @include mixins.blue-background;
-        height: 700px;
+        height: 730px;
 
         .section-title-cont{
-           padding-top: 6rem;
+            width: 40%;
+            padding-top: 6rem;
 
-           small{
-                color: variables.$over-color-text;
+            h2{
+                font-size: variables.$text-section-h2;
+                color: white
             };
+
+            small{
+                color: variables.$over-color-text;
+                font-size: variables.$text-small-size;
+            };
+
+            p{
+                font-size: variables.$text-small-size;
+                color: lightgrey;
+            }
         }
 
         .big-card-container{
-            width: 85%;
+            width: 80%;
             position: absolute;
             bottom: -120%;
             left: 50%;
@@ -142,7 +154,7 @@
             .card{
                 border: 0;
                 border-radius: 30px;
-                box-shadow: 0px 0px 10px rgb(233, 233, 233);
+                box-shadow: 0px 2px 10px 2px rgb(214, 214, 214);
                 .background-numb{
                     font-weight: 700;
                     position: absolute;
@@ -189,15 +201,21 @@
                 }
 
                 .red-button{
+                    width: 260px;
                     margin-top: 3rem;
                     @include mixins.red-button;
                     @include mixins.red-shadow;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                     margin-bottom: 5rem;
+
 
                 &:hover{
                     @include mixins.blue-button;
                     @include mixins.blue-shadow
+                    }
+
+                    span{
+                        padding: .5rem 4rem .5rem 0
                     }
                 };               
             };
@@ -207,11 +225,16 @@
                     color: white;
                 
                     .mid-button{
+                        width: 260px;
                         @include mixins.blue-button;
                         margin-top: 3rem;
-                        font-size: 1.5rem;
+                        font-size: 1.3rem;
                         background: white;
                         color: variables.$over-color-text;
+
+                        span{
+                            padding: .4rem 4rem .4rem 0
+                        }
                     }
                 }
         }
