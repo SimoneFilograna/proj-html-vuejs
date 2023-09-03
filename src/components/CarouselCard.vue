@@ -17,7 +17,7 @@
 </script>
 
 <template>
-    <div class="card h-100 d-flex flex-column me-3" :key="carouselObj.id">
+    <div class="card h-100 d-flex flex-column me-4" :key="carouselObj.id">
         <img :src="getImg(carouselObj.img)" class="card-img-top" :alt="`card n${carouselObj.id}`">
         <div class="card-body d-flex justify-content-between">
             <span class="card-text">{{ carouselObj.title }}</span>
