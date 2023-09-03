@@ -56,6 +56,15 @@
                 console.log(wrapper, card, cardWidth);
                 wrapper.scrollLeft += cardWidth;
             },
+
+            leftScroll(){
+                const wrapper = this.$refs.wrapper;
+                const card = this.$refs.card[0];
+                const cardWidth = card.offsetWidth;
+                this.currentCard--;
+                console.log(wrapper, card, cardWidth);
+                wrapper.scrollLeft -= cardWidth;
+            },
         }
     }
 </script>
