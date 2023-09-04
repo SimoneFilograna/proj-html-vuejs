@@ -65,6 +65,13 @@
                 console.log(wrapper, card, cardWidth);
                 wrapper.scrollLeft -= cardWidth;
             },
+
+            dotFunction(index){
+                const card = this.$refs.card;
+                console.log(card[index], index);
+                this.currentCard = index;
+                card[index].scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"});
+            }
         }
     }
 </script>
@@ -107,7 +114,7 @@
             </div>
     
             <div class="dots-container">
-                <i class="fa-solid fa-circle" v-for="(singleCard, index) in CardList" :class="{'active': this.currentCard === index}"></i>
+                <i class="fa-solid fa-circle" @click="dotFunction(index)" v-for="(singleCard, index) in CardList" :class="{'active': this.currentCard === index}"></i>
             </div>
         </div>
 
