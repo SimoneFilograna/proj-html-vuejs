@@ -31,6 +31,8 @@
 
 <style lang="scss" scoped>
     @use "../sass/partials/mixins";
+    @use "../sass/partials/variables";
+
     .navbar-container{
         font-size: 1.2rem;
         color: white;
@@ -50,8 +52,7 @@
                     color: white;
                 }
             }
-        }
-        
+        }    
         .my-button{
             width: 110px;
             font-size: 1.2rem;
