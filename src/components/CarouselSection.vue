@@ -95,14 +95,26 @@
             </div>
         </div>
 
-        <!-- CAROUSEL -->
+        <!-- CAROUSEL SECTION-->
 
-        <div class="carousel-container d-flex gap-4 overflow-hidden p-3" ref="wrapper">
+        <div class="carousel-section">
 
-            <div class="card-wrapper" v-for="(singleCard, index) in CardList" :key="index" ref="card">
-                <Carouselcard :carouselObj="singleCard"></Carouselcard>
+            <div class="carousel-container d-flex gap-4 overflow-hidden p-3" ref="wrapper">
+    
+                <div class="card-wrapper" v-for="(singleCard, index) in CardList" :key="index" ref="card">
+                    <Carouselcard :carouselObj="singleCard"></Carouselcard>
+                </div>
+            </div>
+    
+            <div class="dots-container">
+                <i class="fa-solid fa-circle active"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle"></i>
             </div>
         </div>
+
     </section>
 </template>
 
@@ -126,25 +138,49 @@
             }
         }
 
-        .carousel-container{
-            scroll-behavior: smooth;
+        .carousel-section{
+
+            .carousel-container{
+                scroll-behavior: smooth;
+            };
+
+            .dots-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .7rem;
+                padding-top: 5rem;
+                margin-bottom: -3rem;
+                font-size: .6rem;
+                color: lightgrey;
+
+                i{
+                    cursor: pointer;
+
+                }
+                
+            }
         }
 
+        .active{
+            color: variables.$over-color-text;
+        }
 
         .button-container{
             padding-right: 200px;
-        }
-        button{
-            font-size: 1.2rem;
-            border-radius: 50%;
-            padding: 1rem;
-            width: 60px;
-            aspect-ratio: 1/1;
-            transition: all .3s linear;
 
-        &:hover{
-            @include mixins.red-hover
-        }
+            button{
+                font-size: 1.2rem;
+                border-radius: 50%;
+                padding: 1rem;
+                width: 60px;
+                aspect-ratio: 1/1;
+                transition: all .3s linear;
+    
+            &:hover{
+                @include mixins.red-hover
+                }
+            }
 
         }
     }
