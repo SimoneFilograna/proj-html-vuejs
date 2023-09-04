@@ -48,7 +48,7 @@
         },
 
         methods:{
-            rightScroll(){
+            rightScroll(index){
                 const wrapper = this.$refs.wrapper;
                 const card = this.$refs.card[0];
                 const cardWidth = card.offsetWidth;
@@ -86,10 +86,10 @@
 
 
             <div class="button-container d-flex gap-5">
-                <button type="button" class="btn btn-outline-danger" @click="leftScroll()">
+                <button type="button" class="btn btn-outline-danger" @click="leftScroll(index)">
                     <i class="fa-solid fa-arrow-left"></i>
                 </button>
-                <button type="button" class="btn btn-outline-danger" @click="rightScroll()">
+                <button type="button" class="btn btn-outline-danger" @click="rightScroll(index)">
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
@@ -107,11 +107,7 @@
             </div>
     
             <div class="dots-container">
-                <i class="fa-solid fa-circle active"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
-                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle" v-for="(singleCard, index) in CardList" :class="{'active': this.currentCard === index}"></i>
             </div>
         </div>
 
