@@ -48,22 +48,33 @@
         },
 
         methods:{
-            rightScroll(index){
+            rightScroll(){
                 const wrapper = this.$refs.wrapper;
                 const card = this.$refs.card[0];
                 const cardWidth = card.offsetWidth;
-                this.currentCard++;
                 console.log(wrapper, card, cardWidth);
                 wrapper.scrollLeft += cardWidth;
+                if (this.currentCard === this.CardList.length - 1){
+                    this.currentCard < this.CardList.length;
+                } else {
+                    this.currentCard++;
+                };
+                console.log(this.currentCard, this.CardList.length)
             },
 
             leftScroll(){
                 const wrapper = this.$refs.wrapper;
                 const card = this.$refs.card[0];
                 const cardWidth = card.offsetWidth;
-                this.currentCard--;
                 console.log(wrapper, card, cardWidth);
                 wrapper.scrollLeft -= cardWidth;
+
+                if (this.currentCard <= 0){
+                    this.currentCard = 0;
+                } else {
+                    this.currentCard--;
+                };
+
             },
 
             dotFunction(index){
