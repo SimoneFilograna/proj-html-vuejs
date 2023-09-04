@@ -54,6 +54,13 @@
                 border-radius: 45px;
                 padding: 1.2rem 2rem;
                 color: variables.$footer-color-text;
+
+            &::placeholder{
+                color: rgb(189, 189, 189);
+                font-size: 1.3rem;
+                font-weight: 200;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
             }
 
         }
