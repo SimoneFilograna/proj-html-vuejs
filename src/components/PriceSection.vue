@@ -88,7 +88,7 @@
                         </div>
                         <div class="card-body position-relative">
                             <h2 class="card-text">Supporting</h2>
-                            <p class="fw-bold">CLIENTS</p>
+                            <p>CLIENTS</p>
                             <div class="price-container">
                                 <span>$</span>
                                 <p class="display-1">40</p>
